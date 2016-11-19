@@ -2,6 +2,9 @@ bower_components/
 build/
 node_modules/
 
+# Firebase
+firebase-debug.log
+
 # Mac os x .gitignore
 
 *.DS_Store

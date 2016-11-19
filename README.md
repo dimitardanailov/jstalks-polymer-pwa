@@ -1,5 +1,9 @@
 # Polymer App Toolbox - Starter Kit
 
+[jstalks 2016 - Demo](https://jstalks-pwa-polymer.firebaseapp.com)
+
+[Polymer app route example](https://github.com/dimitardanailov/polymer-app-route-blog)
+
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
 
 This template is a starting point for building apps using a drawer-based
@@ -86,3 +90,29 @@ of the application.  Each new demand-loaded fragment should be added to the
 list of `fragments` in the included `polymer.json` file.  This will ensure
 those components and their dependencies are added to the list of pre-cached
 components (and will have bundles created in the fallback `bundled` build).
+
+### Firebase commands
+
+> You should now have a globally available firebase command available from any terminal window on your machine. Once you've installed the Firebase CLI, sign in using your Google account:
+
+```bash
+firebase login
+```
+
+> To initialize a new project directory, change directories in the terminal to your desired project directory and run:
+
+```bash
+firebase init
+```
+
+> When you select a project during firebase init, an alias called default is created for you. To create a new alias, run:
+
+```bash
+firebase use --add
+```
+
+> Deploy the application to firebase
+
+```bash
+polymer deploy
+```
