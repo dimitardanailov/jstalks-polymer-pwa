@@ -1,0 +1,80 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view3">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+      :host .active-session {
+        color: red;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">3</div>
+      <h1>Track Three</h1>
+      <ul>
+        <li>
+          <h3>8:30AM - Registration, Coffee</h3>
+        </li>
+
+        <li>
+          <h3>9:00AM - Introduction and Keynote</h3>
+        </li>
+
+        <li>
+          <h3>10:15AM - Typescript decorators: Deep Div</h3>
+        </li>
+
+        <li>
+          <h3>
+            11:30AM - Unleash the power of Javascript with Azure App Service & Functions
+          </h3>
+        </li>
+
+        <li>
+          <h3>1:15PM - JavaScript on JVM</h3> 
+        </li>
+
+        <li>
+          <h3>
+            2:30PM - Webpack for dummies
+            </h3>
+        </li>
+
+        <li>
+          <h3>
+            3:45PM - How to make app for smart TV with MAF(Metrological Application Framewotk)
+          </h3>
+        </li>
+
+        <li>
+          <h3 class="active-session">
+            5:00PM Building modern progressive web apps with Polymer
+          </h3>
+        </li>
+      </ul>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view3'
+    });
+  </script>
+</dom-module>

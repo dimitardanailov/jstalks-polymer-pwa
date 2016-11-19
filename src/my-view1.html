@@ -1,0 +1,81 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+      :host .active-session {
+        color: red;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">1</div>
+      
+      <h1>Track One</h1>
+
+      <ul>
+        <li>
+          <h3>8:30AM - Registration, Coffee</h3>
+        </li>
+
+        <li>
+          <h3>9:00AM - Introduction and Keynote</h3>
+        </li>
+
+        <li>
+          <h3>10:15AM - Микросървиси - какво (не) научихме </h3>
+        </li>
+
+        <li>
+          <h3>11:30AM - React at ProductHunt</h3> 
+        </li>
+
+
+        <li>
+          <h3>
+            1:15PM Deploying and scaling Node.js applications in production  
+          </h3>
+        </li>
+
+        <li>
+          <h3>
+            2:30PM - Understanding prototypical inheritance in JavaScript
+            </h3>
+        </li>
+
+        <li>
+          <h3>
+            3:45PM Redux or Flux - building javascript applications at Uber 
+          </h3>
+        </li>
+
+        <li>
+          <h3 class="active-session">5:00PM Using Redux and Angular 2</h3>
+        </li>
+      </ul>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1'
+    });
+  </script>
+</dom-module>
